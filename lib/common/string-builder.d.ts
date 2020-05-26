@@ -11,7 +11,7 @@ declare class StringBuilder {
             value: string;
         };
     }): this;
-    makeUrl(url?: string): this;
+    makeUrl(url?: string, method?: string, params?: any): this;
     makeMethod(method?: string): this;
     makeData(data: object): this;
     makeStatus(status?: number, statusText?: string): this;

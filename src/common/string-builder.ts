@@ -40,8 +40,16 @@ class StringBuilder {
         return this;
     }
 
-    makeUrl(url?: string) {
+    makeUrl(url?: string, method?: string, params?: { [key:string] : {value:string}}) {
         if(this.config.url && url) this.printQueue.push(url);
+        if(method && method.toUpperCase() === 'GET' && params && JSON.stringify(params) !=='{}'){
+            let queryStrings: Array<string>=[];
+            for(let key in params) {
+                queryStrings.push(key +'=' + params[key]);              
+            }
+            this.printQueue.push('?');
+            this.printQueue.push(queryStrings.join('&'))
+        }
         return this;
     }
 

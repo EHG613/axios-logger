@@ -1,6 +1,6 @@
 {
-    "name": "axios-logger",
-    "version": "2.3.1",
+    "name": "axios-logger-codyy",
+    "version": "2.3.3",
     "description": "Beautify Axios Logging Messages",
     "main": "lib/index.js",
     "keywords": [
@@ -17,15 +17,15 @@
     ],
     "repo,sitory": {
         "type": "git",
-        "url": "git+https://github.com/hg-pyun/axios-intercept-logger.git"
+        "url": "git+https://github.com/EHG613/axios-logger.git"
     },
-    "author": "Haegul Pyun",
-    "email": "phg2491@gmail.com",
+    "author": "Haegul Pyun,Eachann Lee",
+    "email": "eachann_lee@163.com",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/hg-pyun/axios-intercept-logger/issues"
+        "url": "https://github.com/EHG613/axios-logger/issues"
     },
-    "homepage": "https://github.com/hg-pyun/axios-intercept-logger#readme",
+    "homepage": "https://github.com/EHG613/axios-logger#readme",
     "devDependencies": {
         "@babel/cli": "^7.7.7",
         "@babel/core": "^7.7.7",
