@@ -41,14 +41,14 @@ class StringBuilder {
     }
 
     makeUrl(url?: string, method?: string, params?: any) {
-        if(this.config.url && url) this.printQueue.push(url);
         if(method && method.toUpperCase() === 'GET' && params && JSON.stringify(params) !=='{}'){
             let queryStrings: Array<string>=[];
             for(let key in params) {
-                queryStrings.push(key +'=' + params[key]);              
+                queryStrings.push(key +'=' + params[key]);
             }
-            this.printQueue.push('?');
-            this.printQueue.push(queryStrings.join('&'))
+            if(this.config.url && url) this.printQueue.push(url + '?' + queryStrings.join('&'));
+        }else{
+            if(this.config.url && url) this.printQueue.push(url);
         }
         return this;
     }

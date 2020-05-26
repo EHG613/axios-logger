@@ -1,6 +1,6 @@
 {
     "name": "axios-logger-codyy",
-    "version": "2.3.3",
+    "version": "2.3.4",
     "description": "Beautify Axios Logging Messages",
     "main": "lib/index.js",
     "keywords": [
