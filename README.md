@@ -1,4 +1,4 @@
-# axios-logger
+# axios-logger-codyy
 
 [![npm](https://img.shields.io/npm/v/axios-logger-codyy.svg)](https://www.npmjs.com/package/axios-logger-codyy)
 [![npm](https://img.shields.io/npm/dm/axios-logger-codyy.svg)](https://www.npmjs.com/package/axios-logger-codyy)
